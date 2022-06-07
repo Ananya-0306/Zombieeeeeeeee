@@ -944,8 +944,8 @@ while run:
             speaker_show()
         if info_button.draw(screen):
             MENUSELECT.play()
-            webbrowser.open('https://github.com/Ananya-0306/Zombieeeeee')
-            webbrowser.open('https://github.com/Ananya-0306/Zombieeeeee')
+            webbrowser.open('https://github.com/Ananya-0306/Zombieeeeeeeee')
+            webbrowser.open('https://github.com/Ananya-0306/Zombieeeeeeeee')
     else:
         draw_bg()
         world.draw()
@@ -1109,8 +1109,8 @@ pygame.quit()
 
 
 # AUTHOR: Ananya Chatterjee
-# GITHUB: https://github.com/Ananya-0306/Zombieeeeee
+# GITHUB: https://github.com/Ananya-0306/Zombieeeeeeeee
 # LICENSE: MIT
 
-# FINALLY: 
+# FINALLY: 🤩
 # This Isn't a full plan game, does not guarantee that the game will be supported in the future!
