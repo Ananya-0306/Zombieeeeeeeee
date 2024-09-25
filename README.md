@@ -11,11 +11,19 @@
 [linkedin]: https://www.linkedin.com/in/ananya-chatterjee-%F0%9F%87%AE%F0%9F%87%B3-125223172/
 [Facebook]: https://www.facebook.com/profile.php?id=100015892354534
 
-### Liked my Contributions:question::point_right: [Nominate Me for GitHub Stars](https://stars.github.com/nominate/) :star:
+### Liked my Contributions :question: :point_right: [Nominate Me for GitHub Stars](https://stars.github.com/nominate/) :star:
 
+
+
+## How to Install ??
+1. Clone the repository by running ```git clone https://github.com/Ananya-0306/Zombieeeeeeeee.git```
+2. Ensure pygame is installed by running ```pip install pygame```
+3. Open the repository through an IDE or file explorer
+
+Note: If you are missing any packages, ensure you are running the correct environment, or run ```pip install (package name)```
 
 ## 🤔 How To Play ??
-Run ```Zombioo.exe``` or simply open ```MAINGAME.py```
+Run ```Zombioo.exe``` or simply run ```MAINGAME.py```
 
 To create .exe file type in terminal:     
 ```pyinstaller.exe --onefile .\MAINGAME.py```
@@ -24,8 +32,28 @@ To create .exe file type in terminal:
 
 or use auto py to exe
 [PuPI](https://pypi.org/project/auto-py-to-exe/)
+
+## Game Controls
+- W: Move forwards
+- A: Move left
+- S: Move backwards
+- D: Move right
+- Q: Use grenade
+- E: Use molotov
+- M: Mute music
+- U: Unmute music
+- F: Fullscreen
+- F5: Take Screenshot
+- Esc: Exit
+
+
+## Game Objective
+In Zombioo, you must survive the zombie apocalypse! Use everything you can find, from grenades, molotovs, to various ammuniton types to kill zombies. To finish each level, you must collect all the special statues within it. Good luck!
+
 <br />
 ## ⚙️ System Requirements
+
+To ensure Zombioo runs smoothly, please ensure you have the minimum system requirements as listed below.
 
 | System     | Requirements                                                       |
 |:----------:|:------------------------------------------------------------------:|
@@ -36,7 +64,7 @@ or use auto py to exe
 | FREE SPACE | 320MB                                                              |
 | DirectX    | DirectX 9.0 / DirectX 10.0 / DirectX 11.0 / DirectX 12.0           |
 
-<b>Hardware: keyboard, mouse, and headset with microphone</b>.
+<b>Hardware: keyboard, mouse, and headset </b>.
 <br />
 <br />
 

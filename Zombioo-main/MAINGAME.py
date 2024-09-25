@@ -8,10 +8,8 @@ import os
 import random
 import csv
 import button
-import pyautogui
 import webbrowser
 import time
-import itertools
 
 pygame.init()
 
@@ -19,7 +17,7 @@ FULL_SCREEN_WIDTH = 1080
 FULL_SCREEN_HEIGHT = 1920
 SCREEN_WIDTH = 1080
 SCREEN_HEIGHT = int(SCREEN_WIDTH * 0.8)
-programIcon = pygame.image.load('img/favicon/favicon-main.png')
+programIcon = pygame.image.load('Zombioo-main/img/favicon/favicon-main.png')
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_icon(programIcon)
 pygame.display.set_caption('ombioo')
@@ -56,71 +54,71 @@ molotov_thrown = False
 
 
 # HALLOWEEN UPDATE IMAGES
-cat_halloween = pygame.image.load('img/Halloween_update/cat_halloween_update.png').convert_alpha()
-pumpkin_halloween = pygame.image.load('img/Halloween_update/pumpkin_halloween_update.png').convert_alpha()
-bat_halloween = pygame.image.load('img/Halloween_update/halloween_halloween_update.png').convert_alpha()
-menu_halloween = pygame.image.load('img/Halloween_update/menuzombioo_halloween_update.png').convert_alpha()
-happy_halloween = pygame.image.load('img/Halloween_update/happy_halloween_update.png').convert_alpha()
-border_halloween1 = pygame.image.load('img/Halloween_update/border_lore_halloween1.png').convert_alpha()
-border_halloween2 = pygame.image.load('img/Halloween_update/border_lore_halloween2.png').convert_alpha()
+cat_halloween = pygame.image.load('Zombioo-main/img/Halloween_update/cat_halloween_update.png').convert_alpha()
+pumpkin_halloween = pygame.image.load('Zombioo-main/img/Halloween_update/pumpkin_halloween_update.png').convert_alpha()
+bat_halloween = pygame.image.load('Zombioo-main/img/Halloween_update/halloween_halloween_update.png').convert_alpha()
+menu_halloween = pygame.image.load('Zombioo-main/img/Halloween_update/menuzombioo_halloween_update.png').convert_alpha()
+happy_halloween = pygame.image.load('Zombioo-main/img/Halloween_update/happy_halloween_update.png').convert_alpha()
+border_halloween1 = pygame.image.load('Zombioo-main/img/Halloween_update/border_lore_halloween1.png').convert_alpha()
+border_halloween2 = pygame.image.load('Zombioo-main/img/Halloween_update/border_lore_halloween2.png').convert_alpha()
 
 
 # IMAGES
-start_img = pygame.image.load('img/btn/start_btn.png').convert_alpha()
-exit_img = pygame.image.load('img/btn/exit_btn.png').convert_alpha()
-restart_img = pygame.image.load('img/btn/restart_btn.png').convert_alpha()
-settings_img = pygame.image.load('img/btn/cog.png').convert_alpha()
-jk_img = pygame.image.load('img/btn/jk.png').convert_alpha()
-menubg = pygame.image.load('img/background/menuzombioo.png').convert_alpha()
-speaker_img = pygame.image.load('img/btn/speaker.png').convert_alpha()
-speaker_muted_img = pygame.image.load('img/btn/speaker_muted.png').convert_alpha()
-info_img = pygame.image.load('img/btn/info_button.png').convert_alpha()
-angel_statue = pygame.image.load('img/tile/20.png').convert_alpha()
+start_img = pygame.image.load('Zombioo-main/img/btn/start_btn.png').convert_alpha()
+exit_img = pygame.image.load('Zombioo-main/img/btn/exit_btn.png').convert_alpha()
+restart_img = pygame.image.load('Zombioo-main/img/btn/restart_btn.png').convert_alpha()
+settings_img = pygame.image.load('Zombioo-main/img/btn/cog.png').convert_alpha()
+jk_img = pygame.image.load('Zombioo-main/img/btn/jk.png').convert_alpha()
+menubg = pygame.image.load('Zombioo-main/img/background/menuzombioo.png').convert_alpha()
+speaker_img = pygame.image.load('Zombioo-main/img/btn/speaker.png').convert_alpha()
+speaker_muted_img = pygame.image.load('Zombioo-main/img/btn/speaker_muted.png').convert_alpha()
+info_img = pygame.image.load('Zombioo-main/img/btn/info_button.png').convert_alpha()
+angel_statue = pygame.image.load('Zombioo-main/img/tile/20.png').convert_alpha()
 
 #KEYBOARD
-Wkey = pygame.image.load('img/icons/keyboard/Keyboard & Mouse/Light/W_Key_Light.png').convert_alpha()
-Akey = pygame.image.load('img/icons/keyboard/Keyboard & Mouse/Light/A_Key_Light.png').convert_alpha()
-Dkey = pygame.image.load('img/icons/keyboard/Keyboard & Mouse/Light/D_Key_Light.png').convert_alpha()
-Qkey = pygame.image.load('img/icons/keyboard/Keyboard & Mouse/Light/Q_Key_Light.png').convert_alpha()
-ESCkey = pygame.image.load('img/icons/keyboard/Keyboard & Mouse/Light/Esc_Key_Light.png').convert_alpha()
-SPkey = pygame.image.load('img/icons/keyboard/Keyboard & Mouse/Light/Spacelarge_Key_Light.png').convert_alpha()
-Mkey = pygame.image.load('img/icons/keyboard/Keyboard & Mouse/Light/M_Key_Light.png').convert_alpha()
-Ukey = pygame.image.load('img/icons/keyboard/Keyboard & Mouse/Light/U_Key_Light.png').convert_alpha()
-Fkey = pygame.image.load('img/icons/keyboard/Keyboard & Mouse/Light/F_Key_Light.png').convert_alpha()
-F5key = pygame.image.load('img/icons/keyboard/Keyboard & Mouse/Light/F5_Key_Light.png').convert_alpha()
-F4key = pygame.image.load('img/icons/keyboard/Keyboard & Mouse/Light/F4_Key_Light.png').convert_alpha()
+Wkey = pygame.image.load('Zombioo-main/img/icons/keyboard/Keyboard & Mouse/Light/W_Key_Light.png').convert_alpha()
+Akey = pygame.image.load('Zombioo-main/img/icons/keyboard/Keyboard & Mouse/Light/A_Key_Light.png').convert_alpha()
+Dkey = pygame.image.load('Zombioo-main/img/icons/keyboard/Keyboard & Mouse/Light/D_Key_Light.png').convert_alpha()
+Qkey = pygame.image.load('Zombioo-main/img/icons/keyboard/Keyboard & Mouse/Light/Q_Key_Light.png').convert_alpha()
+ESCkey = pygame.image.load('Zombioo-main/img/icons/keyboard/Keyboard & Mouse/Light/Esc_Key_Light.png').convert_alpha()
+SPkey = pygame.image.load('Zombioo-main/img/icons/keyboard/Keyboard & Mouse/Light/Spacelarge_Key_Light.png').convert_alpha()
+Mkey = pygame.image.load('Zombioo-main/img/icons/keyboard/Keyboard & Mouse/Light/M_Key_Light.png').convert_alpha()
+Ukey = pygame.image.load('Zombioo-main/img/icons/keyboard/Keyboard & Mouse/Light/U_Key_Light.png').convert_alpha()
+Fkey = pygame.image.load('Zombioo-main/img/icons/keyboard/Keyboard & Mouse/Light/F_Key_Light.png').convert_alpha()
+F5key = pygame.image.load('Zombioo-main/img/icons/keyboard/Keyboard & Mouse/Light/F5_Key_Light.png').convert_alpha()
+F4key = pygame.image.load('Zombioo-main/img/icons/keyboard/Keyboard & Mouse/Light/F4_Key_Light.png').convert_alpha()
 
 # BACKGROUND IMAGES
 pine1_img = pygame.image.load(
-    'img/background/2_background_NEST/2_game_background.png').convert_alpha()
+    'Zombioo-main/img/background/2_background_NEST/2_game_background.png').convert_alpha()
 pine2_img = pygame.image.load(
-    'img/background/2_background_NEST/2_game_background.png').convert_alpha()
-mountain_img = pygame.image.load('img/background/2_background_NEST/2_game_background.png').convert_alpha()
-sky_img = pygame.image.load('img/Background/sky_cloud.png').convert_alpha()
-headhp = pygame.image.load('img/player/headHP.png').convert_alpha()
-headdeadhp = pygame.image.load('img/player/headdeadHP.png').convert_alpha()
-border_settings_img = pygame.image.load('img/background/border_settings.png').convert_alpha()
-border_lore_img = pygame.image.load('img/background/border_lore.png').convert_alpha()
+    'Zombioo-main/img/background/2_background_NEST/2_game_background.png').convert_alpha()
+mountain_img = pygame.image.load('Zombioo-main/img/background/2_background_NEST/2_game_background.png').convert_alpha()
+sky_img = pygame.image.load('Zombioo-main/img/Background/sky_cloud.png').convert_alpha()
+headhp = pygame.image.load('Zombioo-main/img/player/headHP.png').convert_alpha()
+headdeadhp = pygame.image.load('Zombioo-main/img/player/headdeadHP.png').convert_alpha()
+border_settings_img = pygame.image.load('Zombioo-main/img/background/border_settings.png').convert_alpha()
+border_lore_img = pygame.image.load('Zombioo-main/img/background/border_lore.png').convert_alpha()
 
 
 
 # TILES ETC
 img_list = []
 for x in range(TILE_TYPES):
-    img = pygame.image.load(f'img/Tile/{x}.png')
+    img = pygame.image.load(f'Zombioo-main/img/Tile/{x}.png')
     img = pygame.transform.scale(img, (TILE_SIZE, TILE_SIZE))
     img_list.append(img)
 
-bullet_img = pygame.image.load('img/icons/ammo.png').convert_alpha()
-bullet_zombie = pygame.image.load('img/icons/bulletzombie.png').convert_alpha
+bullet_img = pygame.image.load('Zombioo-main/img/icons/ammo.png').convert_alpha()
+bullet_zombie = pygame.image.load('Zombioo-main/img/icons/bulletzombie.png').convert_alpha
 
-grenade_img = pygame.image.load('img/icons/grenade.png').convert_alpha()
-molotov_img = pygame.image.load('img/icons/molotov.png').convert_alpha() 
+grenade_img = pygame.image.load('Zombioo-main/img/icons/grenade.png').convert_alpha()
+molotov_img = pygame.image.load('Zombioo-main/img/icons/molotov.png').convert_alpha() 
 
-health_box_img = pygame.image.load('img/icons/health_box.png').convert_alpha()
-ammo_box_img = pygame.image.load('img/icons/ammo_box.png').convert_alpha()
-grenade_box_img = pygame.image.load('img/icons/grenade_box.png').convert_alpha()
-molotov_box_img = pygame.image.load('img/icons/molotov_box.png').convert_alpha()
+health_box_img = pygame.image.load('Zombioo-main/img/icons/health_box.png').convert_alpha()
+ammo_box_img = pygame.image.load('Zombioo-main/img/icons/ammo_box.png').convert_alpha()
+grenade_box_img = pygame.image.load('Zombioo-main/img/icons/grenade_box.png').convert_alpha()
+molotov_box_img = pygame.image.load('Zombioo-main/img/icons/molotov_box.png').convert_alpha()
 item_boxes = {
     'Health'	: health_box_img,
     'Ammo'		: ammo_box_img,
@@ -137,59 +135,59 @@ BLACK = (0, 0, 0)
 CRIMSON = (191, 46, 72)
 
 #MUSIC
-menumusic = pygame.mixer.music.load('audio/THEME.wav')
+menumusic = pygame.mixer.music.load('Zombioo-main/audio/THEME.wav')
 pygame.mixer.music.play(0)
-SHOOT_SOUND = pygame.mixer.Sound('audio/shot.mp3')
+SHOOT_SOUND = pygame.mixer.Sound('Zombioo-main/audio/shot.mp3')
 SHOOT_SOUND.set_volume(0.6)
 
-RELOAD = pygame.mixer.Sound('audio/Reloading.mp3')
+RELOAD = pygame.mixer.Sound('Zombioo-main/audio/Reloading.mp3')
 RELOAD.set_volume(1)
 
-GRENADESOUND = pygame.mixer.Sound('audio/grenade.mp3')
+GRENADESOUND = pygame.mixer.Sound('Zombioo-main/audio/grenade.mp3')
 GRENADESOUND.set_volume(1)
 
-MOLOTOVSOUND = pygame.mixer.Sound('audio/molotov.wav')
+MOLOTOVSOUND = pygame.mixer.Sound('Zombioo-main/audio/molotov.wav')
 MOLOTOVSOUND.set_volume(1)
 
-MOLOTOVBR = pygame.mixer.Sound('audio/molotovbr.wav')
+MOLOTOVBR = pygame.mixer.Sound('Zombioo-main/audio/molotovbr.wav')
 MOLOTOVBR.set_volume(3)
 
-PICK = pygame.mixer.Sound('audio/grenadepick.mp3')
+PICK = pygame.mixer.Sound('Zombioo-main/audio/grenadepick.mp3')
 PICK.set_volume(2)
 
-PICKHEALTH = pygame.mixer.Sound('audio/pills.mp3')
+PICKHEALTH = pygame.mixer.Sound('Zombioo-main/audio/pills.mp3')
 PICKHEALTH.set_volume(2)
 
-GRUNTING = pygame.mixer.Sound('audio/Grunting.mp3')
+GRUNTING = pygame.mixer.Sound('Zombioo-main/audio/Grunting.mp3')
 GRUNTING.set_volume(2)
 
-ZOMBIEATTACK = pygame.mixer.Sound('audio/zombieattack.mp3')
+ZOMBIEATTACK = pygame.mixer.Sound('Zombioo-main/audio/zombieattack.mp3')
 ZOMBIEATTACK.set_volume(20)
 
-MENUSELECT = pygame.mixer.Sound('audio/menuselect.mp3')
+MENUSELECT = pygame.mixer.Sound('Zombioo-main/audio/menuselect.mp3')
 MENUSELECT.set_volume(9)
 
-NEXTLEVEL = pygame.mixer.Sound('audio/nextlevel.mp3')
+NEXTLEVEL = pygame.mixer.Sound('Zombioo-main/audio/nextlevel.mp3')
 NEXTLEVEL.set_volume(9)
 
-JUMP = pygame.mixer.Sound('audio/jump.mp3')
+JUMP = pygame.mixer.Sound('Zombioo-main/audio/jump.mp3')
 JUMP.set_volume(2)
 
-GAMEOVER = pygame.mixer.Sound('audio/gameover.wav')
+GAMEOVER = pygame.mixer.Sound('Zombioo-main/audio/gameover.wav')
 GAMEOVER.set_volume(2)
 
-SCREENSHOT = pygame.mixer.Sound('audio/takingphoto.wav')
+SCREENSHOT = pygame.mixer.Sound('Zombioo-main/audio/takingphoto.wav')
 SCREENSHOT.set_volume(5)
 
 # FONT
-font = pygame.font.Font("font/Futurot.ttf", 21)
-ver = pygame.font.Font("font/Futurot.ttf", 10)
-zombiootitle = pygame.font.Font("font/Futurot.ttf", 130)
-BTNtext = pygame.font.Font("font/Futurot.ttf", 50)
-YOUDIED = pygame.font.Font("font/Futurot.ttf", 110)
-JanKupczyk = pygame.font.Font("font/Futurot.ttf", 13)
-LORE = pygame.font.Font("font/Futurot.ttf", 14)
-LOREsmall = pygame.font.Font("font/Futurot.ttf", 8)
+font = pygame.font.Font("Zombioo-main/font/Futurot.ttf", 21)
+ver = pygame.font.Font("Zombioo-main/font/Futurot.ttf", 10)
+zombiootitle = pygame.font.Font("Zombioo-main/font/Futurot.ttf", 130)
+BTNtext = pygame.font.Font("Zombioo-main/font/Futurot.ttf", 50)
+YOUDIED = pygame.font.Font("Zombioo-main/font/Futurot.ttf", 110)
+JanKupczyk = pygame.font.Font("Zombioo-main/font/Futurot.ttf", 13)
+LORE = pygame.font.Font("Zombioo-main/font/Futurot.ttf", 14)
+LOREsmall = pygame.font.Font("Zombioo-main/font/Futurot.ttf", 8)
 
 pausetimerevent = pygame.USEREVENT + 1
 paused = False
@@ -270,10 +268,10 @@ class Soldier(pygame.sprite.Sprite):
             temp_list = []
             # SUBFOLDER
             num_of_frames = len(os.listdir(
-                f'img/{self.char_type}/{animation}'))
+                f'Zombioo-main/img/{self.char_type}/{animation}'))
             for i in range(num_of_frames):
                 img = pygame.image.load(
-                    f'img/{self.char_type}/{animation}/{i}.png').convert_alpha()
+                    f'Zombioo-main/img/{self.char_type}/{animation}/{i}.png').convert_alpha()
                 img = pygame.transform.scale(
                     img, (int(img.get_width() * scale), int(img.get_height() * scale)))
                 temp_list.append(img)
@@ -793,7 +791,7 @@ class MoloExplosion(pygame.sprite.Sprite):
         MOLOTOVBR.play()
         for num in range(0, 4):
             img = pygame.image.load(
-                f'img/moloexplosion/Molo_{num}.png').convert_alpha()
+                f'Zombioo-main/img/moloexplosion/Molo_{num}.png').convert_alpha()
             img = pygame.transform.scale(
                 img, (int(img.get_width() * scale), int(img.get_height() * scale)))
             self.images.append(img)
@@ -824,7 +822,7 @@ class Explosion(pygame.sprite.Sprite):
         self.images = []
         for num in range(1, 7):
             img = pygame.image.load(
-                f'img/explosion/Explosion_{num}.png').convert_alpha()
+                f'Zombioo-main/img/explosion/Explosion_{num}.png').convert_alpha()
             img = pygame.transform.scale(
                 img, (int(img.get_width() * scale), int(img.get_height() * scale)))
             self.images.append(img)
@@ -892,7 +890,7 @@ for row in range(ROWS):
     r = [-1] * COLS
     world_data.append(r)
 # load in level data and create world
-with open(f'level/level{level}_data.csv', newline='') as csvfile:
+with open(f'Zombioo-main/level/level{level}_data.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     for x, row in enumerate(reader):
         for y, tile in enumerate(row):
@@ -1021,7 +1019,7 @@ while run:
                 world_data = reset_level()
                 if level <= MAX_LEVELS:
                     # CREATING WORLD
-                    with open(f'level/level{level}_data.csv', newline='') as csvfile:
+                    with open(f'Zombioo-main/level/level{level}_data.csv', newline='') as csvfile:
                         reader = csv.reader(csvfile, delimiter=',')
                         for x, row in enumerate(reader):
                             for y, tile in enumerate(row):
@@ -1040,7 +1038,7 @@ while run:
                 bg_scroll = 0
                 world_data = reset_level()
                 #CREATE WORLD DATA
-                with open(f'level/level{level}_data.csv', newline='') as csvfile:
+                with open(f'Zombioo-main/level/level{level}_data.csv', newline='') as csvfile:
                     reader = csv.reader(csvfile, delimiter=',')
                     for x, row in enumerate(reader):
                         for y, tile in enumerate(row):
