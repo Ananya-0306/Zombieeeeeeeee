@@ -51,6 +51,7 @@ or use auto py to exe
 In Zombioo, you must survive the zombie apocalypse! Use everything you can find, from grenades, molotovs, to various ammuniton types to kill zombies. To finish each level, you must collect all the special statues within it. Good luck!
 
 <br />
+
 ## ⚙️ System Requirements
 
 To ensure Zombioo runs smoothly, please ensure you have the minimum system requirements as listed below.
